@@ -16,6 +16,16 @@ Step to step to work with git 🔥:
   - Và `name` là mô tả ngắn gọn cho mục tiêu
   - (Ví dụ: `Feature_Auth_with_github` để thêm chức năng đăng nhập với github)
 
+## 🚀 Step to works:
+
+* Nếu **chưa** có repo, `clone` repo từ github
+* Đã có repo, xác định điều cần làm (feature, fix, ...)
+* **Không** sử dụng các branch `main`, `stable`, `development` để chỉnh sửa, hãy tạo branch mới và làm việc trên branch mới đó
+* Kiểm thử
+* Commit khi hoàn thành, và push lên github
+* Tạo **Pull Request** và nhờ người khác review code, đánh giá, kiểm thử.
+* Chỉ tạo **Pull Request** để merge vào branch `development` hoặc branch khác các branch `main`, `stable`!
+
 ## 🔥 Bắt đầu nhanh
 
 **1. Lấy code từ github:**
