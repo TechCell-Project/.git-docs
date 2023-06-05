@@ -29,12 +29,12 @@ Step to step to work with git 🔥:
 
 - Kiểm tra branch hiện tại: `git branch`
 
-  <p align="center"><img src="./images/git-branch.PNG" alt="description of image" width="350px"></p>
+  <p align="center"><img src="./images/git-branch.PNG" alt="description of image" width="380px"></p>
 
 - Chuyển sang branch đã tồn tại: `git checkout <branch_name>`
 - Chuyển sang branch chưa tồn tại, và tạo mới: `git checkout -b <new_branch_name>`
 <p align="center">
-  <img src="./images/checkout-b.PNG" alt="description of image" width="350px"></p>
+  <img src="./images/checkout-b.PNG" alt="description of image" width="420px"></p>
 - Để xóa branch, cần phải checkout sang branch khác sau đó: `git branch -d <branch_name>`
 
 **3. Commit:**
@@ -56,16 +56,16 @@ Step to step to work with git 🔥:
 
 - Sau khi push thành công, truy cập vào repo trên github:
 <p align="center">
-  <img src="./images/new-branch.PNG" alt="description of image" width="400px"></p>
+  <img src="./images/new-branch.PNG" alt="description of image" width="500px"></p>
 - Branch mới đã được push lên thành công, bấm vào branch vừa push, và chọn `Open Pull Request`:
 <p align="center">
-  <img src="./images/open-pull-request.PNG" alt="description of image" width="400px"></p>
+  <img src="./images/open-pull-request.PNG" alt="description of image" width="500px"></p>
 - Chuyển sang `development`, không được merge vào `main` trừ khi là hot fix:
 <p align="center">
-  <img src="./images/change-to-dev-branch.PNG" alt="description of image" width="400px"></p>
+  <img src="./images/change-to-dev-branch.PNG" alt="description of image" width="500px"></p>
 - Điền tiltle và comment để mô tả mục đích của branch muốn merger, sau đó chọn `Create Pull Request`:
 <p align="center">
-  <img src="./images/create-pull-request.PNG" alt="description of image" width="400px"></p>
+  <img src="./images/create-pull-request.PNG" alt="description of image" width="500px"></p>
 
 **6. Theo dõi Pull Request:**
 
