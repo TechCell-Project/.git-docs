@@ -21,36 +21,77 @@ Step to step to work with git 🔥:
 **1. Lấy code từ github:**
 
 - Clone git repository về máy bằng câu lệnh:
-  `git clone <link-to-repo>`
+  ```bash
+  git clone <link-to-repo>
+  ```
 - Có thể đặt lại tên bằng cách thêm tên phía sau:
-  `git clone <link-to-repo> <name>`
+  ```bash
+  git clone <link-to-repo> <name>
+  ```
 
 **2. Làm việc với branch:**
 
-- Kiểm tra branch hiện tại: `git branch`
+- Kiểm tra branch hiện tại: 
+```bash
+git branch
+```
 
   <p align="center"><img src="./images/git-branch.PNG" alt="description of image" width="380px"></p>
 
 - Chuyển sang branch đã tồn tại: `git checkout <branch_name>`
 - Chuyển sang branch chưa tồn tại, và tạo mới: `git checkout -b <new_branch_name>`
-<p align="center">
-  <img src="./images/checkout-b.PNG" alt="description of image" width="420px"></p>
+  <p align="center">
+    <img src="./images/checkout-b.PNG" alt="description of image" width="420px">
+  </p>
 - Để xóa branch, cần phải checkout sang branch khác sau đó: `git branch -d <branch_name>`
 
 **3. Commit:**
 
-- Sử dụng `git add <path-to-file>` để thêm các file muốn commit vào staged area. Bạn cũng có thể sử dụng git add . để thêm tất cả các thay đổi trong repository.
-- Sử dụng `git status` để kiểm tra trạng thái của staged area và các file trong working directory.
-- Sử dụng `git diff` để xem sự khác biệt giữa các file trong working directory và staged area.
-- Khi đã staged các file, sử dụng `git commit -m "<commit_message>"` để commit các file. Lưu ý rằng commit message cần phải rõ ràng và mô tả đầy đủ các thay đổi trong commit.
-- Nếu cần chỉnh sửa lại commit, sử dụng `git commit --amend`.
-- Để xem lại lịch sử commit của repository, sử dụng `git log`.
+- Để thêm các file muốn commit vào staged area. Bạn cũng có thể sử dụng git add . để thêm tất cả các thay đổi trong repository.
+```bash 
+  git add <path-to-file>
+  #or
+  git add .
+``` 
+- Để kiểm tra trạng thái của staged area và các file trong working directory, sử dụng:
+```bash
+git status
+```
+- Để xem sự khác biệt giữa các file trong working directory và staged area, sử dụng:
+```bash
+git diff
+```
+- Khi đã staged các file, để commit các file (Lưu ý rằng commit message cần phải rõ ràng và mô tả đầy đủ các thay đổi trong commit), sử dụng: 
+```bash
+git commit -m "<commit_message>"
+```
+- Nếu cần chỉnh sửa lại commit, sử dụng:
+```bash
+git commit --amend
+```
+- Để xem lại lịch sử commit của repository, sử dụng:
+```bash
+git log
+```
 
 **4. Push:**
 
-- Sau khi đã commit các thay đổi, bạn có thể đẩy chúng lên repository trên server bằng lệnh `git push`.
-- Lưu ý rằng trước khi push, bạn cần phải pull dữ liệu mới nhất từ server về bằng lệnh `git pull`.
-- Để đẩy các thay đổi lên branch hiện tại, sử dụng lệnh `git push origin <branch_name>`. Nếu branch chưa được đẩy lên server trước đó, bạn có thể sử dụng lệnh `git push --set-upstream origin <branch_name>` để đẩy branch và thiết lập upstream cho lần đẩy tiếp theo.
+- Sau khi đã commit các thay đổi, bạn có thể đẩy chúng lên repository trên server bằng lệnh:
+```bash
+git push
+```
+- Lưu ý rằng trước khi push, bạn cần phải pull dữ liệu mới nhất từ server về bằng lệnh:
+```bash
+git pull
+```
+- Để đẩy các thay đổi lên branch hiện tại, sử dụng lệnh:
+```bash
+git push origin <branch_name>
+```
+- Nếu branch chưa được đẩy lên server trước đó, để đẩy branch và thiết lập upstream cho lần đẩy tiếp theo bạn có thể sử dụng lệnh:
+```bash
+git push --set-upstream origin <branch_name>
+```
 
 **5. Tạo pull request:**
 
