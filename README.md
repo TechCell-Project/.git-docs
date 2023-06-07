@@ -57,12 +57,25 @@ git branch
 
   <p align="center"><img src="./images/git-branch.PNG" alt="description of image" width="380px"></p>
 
-- Chuyển sang branch đã tồn tại: `git checkout <branch_name>`
-- Chuyển sang branch chưa tồn tại, và tạo mới: `git checkout -b <new_branch_name>`
+- Chuyển sang branch đã tồn tại:
+
+```bash
+git checkout <branch_name>
+```
+
+- Chuyển sang branch chưa tồn tại, và tạo mới:
+```bash
+git checkout -b <new_branch_name>
+```
+
   <p align="center">
     <img src="./images/checkout-b.PNG" alt="description of image" width="420px">
   </p>
-- Để xóa branch, cần phải checkout sang branch khác sau đó: `git branch -d <branch_name>`
+- Để xóa branch, cần phải checkout sang branch khác sau đó:
+
+```bash
+git branch -d <branch_name>
+```
 
 ### **3. Commit:**
 
