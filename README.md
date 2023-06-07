@@ -18,17 +18,17 @@ Step to step to work with git 🔥:
 
 ## 🚀 Step to works:
 
-* Nếu **chưa** có repo, `clone` repo từ github
-* Đã có repo, xác định điều cần làm (feature, fix, ...)
-* **Không** sử dụng các branch `main`, `stable`, `development` để chỉnh sửa, hãy tạo branch mới và làm việc trên branch mới đó
+* Nếu **chưa** có repo, [clone repo](#1-lấy-code-từ-github) từ github
+* [Đã có repo, xác định điều cần làm (feature, fix, ...)](#🚀-lưu-ý)
+* **Không** sử dụng các branch `main`, `stable`, `development` để chỉnh sửa, hãy [tạo branch mới](#2-làm-việc-với-branch) và làm việc trên branch mới đó
 * Kiểm thử
-* Commit khi hoàn thành, và push lên github
-* Tạo **Pull Request** và nhờ người khác review code, đánh giá, kiểm thử.
-* Chỉ tạo **Pull Request** để merge vào branch `development` hoặc branch khác các branch `main`, `stable`!
+* [Commit](#3-commit) khi hoàn thành, và [push](#4-push) lên github
+* Tạo **[Pull Request](#5-tạo-pull-request)** và nhờ người khác review code, đánh giá, kiểm thử.
+* Chỉ tạo **[Pull Request](#5-tạo-pull-request)** để merge vào branch `development` hoặc branch khác mà không phải branch `main`, `stable`
 
-## 🔥 Bắt đầu nhanh
+# 🔥 Bắt đầu nhanh
 
-**1. Lấy code từ github:**
+### **1. Lấy code từ github:**
 
 - Clone git repository về máy bằng câu lệnh:
   ```bash
@@ -39,7 +39,7 @@ Step to step to work with git 🔥:
   git clone <link-to-repo> <name>
   ```
 
-**2. Làm việc với branch:**
+### **2. Làm việc với branch:**
 
 - Kiểm tra branch hiện tại: 
 ```bash
@@ -55,7 +55,7 @@ git branch
   </p>
 - Để xóa branch, cần phải checkout sang branch khác sau đó: `git branch -d <branch_name>`
 
-**3. Commit:**
+### **3. Commit:**
 
 - Để thêm các file muốn commit vào staged area. Bạn cũng có thể sử dụng git add . để thêm tất cả các thay đổi trong repository.
 ```bash 
@@ -84,7 +84,7 @@ git commit --amend
 git log
 ```
 
-**4. Push:**
+### **4. Push:**
 
 - Sau khi đã commit các thay đổi, bạn có thể đẩy chúng lên repository trên server bằng lệnh:
 ```bash
@@ -103,7 +103,7 @@ git push origin <branch_name>
 git push --set-upstream origin <branch_name>
 ```
 
-**5. Tạo pull request:**
+### **5. Tạo pull request:**
 
 - Sau khi push thành công, truy cập vào repo trên github:
 <p align="center">
@@ -118,6 +118,6 @@ git push --set-upstream origin <branch_name>
 <p align="center">
   <img src="./images/create-pull-request.PNG" alt="description of image" width="500px"></p>
 
-**6. Theo dõi Pull Request:**
+### **6. Theo dõi Pull Request:**
 
 - Nhớ theo dõi Pull Request để thảo luận về code của bạn ... 🔥
