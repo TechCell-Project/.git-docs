@@ -49,7 +49,7 @@ Step to step to work with git 🔥:
 
 ### **2. Làm việc với branch:**
 
-- Kiểm tra branch hiện tại:
+- Kiểm tra branch:
 
 ```bash
 git branch
@@ -57,13 +57,23 @@ git branch
 
   <p align="center"><img src="./images/git-branch.PNG" alt="description of image" width="380px"></p>
 
+- Kiểm tra tất cả các branch:
+```bash
+git branch --all
+```
+
+- Tạo branch mới:
+```bash
+git branch <new_branch_name>
+```
+
 - Chuyển sang branch đã tồn tại:
 
 ```bash
 git checkout <branch_name>
 ```
 
-- Chuyển sang branch chưa tồn tại, và tạo mới:
+- Chuyển sang branch chưa tồn tại, và tự động tạo mới:
 ```bash
 git checkout -b <new_branch_name>
 ```
@@ -75,6 +85,15 @@ git checkout -b <new_branch_name>
 
 ```bash
 git branch -d <branch_name>
+```
+- Lần đầu clone code có thể sẽ thiếu các branch phụ, mà chỉ có branch chính, như sau:
+  <p align="center">
+    <img src="./images/first-clone.png" alt="description of image" width="420px">
+  </p>
+
+- Cách xử lí, ví dụ muốn vào branch tên là `development`:
+```bash
+git switch development
 ```
 
 ### **3. Commit:**
