@@ -81,10 +81,14 @@ git checkout -b <new_branch_name>
   <p align="center">
     <img src="./images/checkout-b.PNG" alt="description of image" width="420px">
   </p>
-- Để xóa branch, cần phải checkout sang branch khác sau đó:
+- Để xóa branch, cần phải checkout sang branch khác branch cần xóa sau đó:
 
 ```bash
-git branch -d <branch_name>
+# nếu branch đã merge vào branch nào đấy rồi
+git branch -d <branch_name_to_remove>
+
+# nếu branch chưa từng merge vào branch nào
+git branch -D <branch_name_to_remove>
 ```
 - Lần đầu clone code có thể sẽ thiếu các branch phụ, mà chỉ có branch chính, như sau:
   <p align="center">
@@ -93,6 +97,9 @@ git branch -d <branch_name>
 
 - Cách xử lí, ví dụ muốn vào branch tên là `development`:
 ```bash
+git switch <branch_to_switch>
+
+# ví dụ
 git switch development
 ```
 
